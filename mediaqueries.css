@@ -1,0 +1,11 @@
+@media screen and (max-width: 1200px){
+    #wallpaper{
+        display: flex;
+    }
+    #pcWallpaper{
+        display: none;
+    }
+    #header{
+        background-color: rgba(44, 44, 44, 0.4);
+    }
+}
