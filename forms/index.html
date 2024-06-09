@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>forms</title>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <!-- logo -->
+            <img src="./assets/logo.png" alt="logo" id="logo">
+            <h1 id="textLogo">ODIN</h1>
+        </div>
+    </header>
+
+    <div id="container">
+        <!-- background -->
+        <img src="./assets/bg.jpg" alt="" id="wallpaper">
+
+        <!-- PC background -->
+        <img src="./assets/bgPC.jpg" alt="" id="pcWallpaper">
+
+        <div id="box">
+            <!-- Forms -->
+            <h1 id="formText">REGISTER FORM</h1>
+            <form action="https://httpbin.org/post" method="post" target="_blank" id="forms">
+                <div id="nameSplit">
+                    <div class="form">
+                        <label for="firstName">First Name: </label>
+                        <input type="text" name="first_name" class="formInput" id="firstName" placeholder="john"><br>
+                    </div>
+    
+                    <div class="form">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="last_name" class="formInput" id="lastName" placeholder="doe"><br>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="formInput" id="email" placeholder="guest@gmail.com"><br>
+                </div>
+
+                <div class="form">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" class="formInput" id="password"><br>
+                </div>
+
+                <div class="form">
+                    <label for="conPass">Confirm Password:</label>
+                    <input type="password" name="conPass" class="formInput" id="conPass">
+                    <label for="conPass" id="errorMessage"></label><br>
+                </div>
+        
+                <div class="form">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" class="formInput" id="age"><br>
+                </div>
+                <button type="submit" id="submitBtn" onclick="submit()">Submit</button>
+            </form>
+        </div>
+        <div id="loginText"><p>Already have an account? <a href="">Log in</a></p></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
